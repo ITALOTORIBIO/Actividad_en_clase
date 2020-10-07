@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro a Intranet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Complete los siguientes campos*</h1>
+        <form action="index.html" method="post">
+            <div class="form-group">
+                Nombres: <input type="text" name="nombres" required class="form-control">
+            </div>
+            <div class="form-group">
+                Apellidos: <input type="text" name="apellidos" required class="form-control">
+            </div>
+            <div class="form-group">
+                Correo: <input type="email" name="correo" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <div>
+                    Documento de identidad:
+                    <select name="documento" >
+                        <option value="1">DNI</option>
+                        <option value="2">Carne de extranjería</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" name="numero" required class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                Sexo: 
+                <label><input type="radio" name="sexo" value="F">Femenino</label>
+                <label><input type="radio" name="sexo" value="M">Masculino</label>
+            </div>
+            <div class="form-group">
+                Contraseña: <input type="password" name="contrasena" class="form-control" required>
+            </div>
+            <button class="btn btn-primary">REGISTRAR</button>
+        </form>
+    </div> 
+</body>
+</html>
